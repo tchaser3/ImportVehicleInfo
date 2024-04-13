@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ImportedVehicleInfoDataSet" targetNamespace="http://tempuri.org/ImportedVehicleInfoDataSet.xsd" xmlns:mstns="http://tempuri.org/ImportedVehicleInfoDataSet.xsd" xmlns="http://tempuri.org/ImportedVehicleInfoDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ImportedVehicleInfoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ImportedVehicleInfoDataSet" msprop:Generator_UserDSName="ImportedVehicleInfoDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vehicleinfo" msprop:Generator_TableClassName="vehicleinfoDataTable" msprop:Generator_TableVarName="tablevehicleinfo" msprop:Generator_TablePropName="vehicleinfo" msprop:Generator_RowDeletingName="vehicleinfoRowDeleting" msprop:Generator_RowChangingName="vehicleinfoRowChanging" msprop:Generator_RowEvHandlerName="vehicleinfoRowChangeEventHandler" msprop:Generator_RowDeletedName="vehicleinfoRowDeleted" msprop:Generator_UserTableName="vehicleinfo" msprop:Generator_RowChangedName="vehicleinfoRowChanged" msprop:Generator_RowEvArgName="vehicleinfoRowChangeEvent" msprop:Generator_RowClassName="vehicleinfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TransactionID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
+              <xs:element name="BJCNumber" msprop:Generator_ColumnVarNameInTable="columnBJCNumber" msprop:Generator_ColumnPropNameInRow="BJCNumber" msprop:Generator_ColumnPropNameInTable="BJCNumberColumn" msprop:Generator_UserColumnName="BJCNumber" type="xs:int" />
+              <xs:element name="VehicleID" msprop:Generator_ColumnVarNameInTable="columnVehicleID" msprop:Generator_ColumnPropNameInRow="VehicleID" msprop:Generator_ColumnPropNameInTable="VehicleIDColumn" msprop:Generator_UserColumnName="VehicleID" type="xs:int" />
+              <xs:element name="CDLRequired" msprop:Generator_ColumnVarNameInTable="columnCDLRequired" msprop:Generator_ColumnPropNameInRow="CDLRequired" msprop:Generator_ColumnPropNameInTable="CDLRequiredColumn" msprop:Generator_UserColumnName="CDLRequired" type="xs:boolean" />
+              <xs:element name="MedicalCardRequired" msprop:Generator_ColumnVarNameInTable="columnMedicalCardRequired" msprop:Generator_ColumnPropNameInRow="MedicalCardRequired" msprop:Generator_ColumnPropNameInTable="MedicalCardRequiredColumn" msprop:Generator_UserColumnName="MedicalCardRequired" type="xs:boolean" />
+              <xs:element name="DOTStatusID" msprop:Generator_ColumnVarNameInTable="columnDOTStatusID" msprop:Generator_ColumnPropNameInRow="DOTStatusID" msprop:Generator_ColumnPropNameInTable="DOTStatusIDColumn" msprop:Generator_UserColumnName="DOTStatusID" type="xs:int" />
+              <xs:element name="GPSStatusID" msprop:Generator_ColumnVarNameInTable="columnGPSStatusID" msprop:Generator_ColumnPropNameInRow="GPSStatusID" msprop:Generator_ColumnPropNameInTable="GPSStatusIDColumn" msprop:Generator_UserColumnName="GPSStatusID" type="xs:int" />
+              <xs:element name="IMEI" msprop:Generator_ColumnVarNameInTable="columnIMEI" msprop:Generator_ColumnPropNameInRow="IMEI" msprop:Generator_ColumnPropNameInTable="IMEIColumn" msprop:Generator_UserColumnName="IMEI" type="xs:string" />
+              <xs:element name="TamperTag" msprop:Generator_ColumnVarNameInTable="columnTamperTag" msprop:Generator_ColumnPropNameInRow="TamperTag" msprop:Generator_ColumnPropNameInTable="TamperTagColumn" msprop:Generator_UserColumnName="TamperTag" type="xs:int" />
+              <xs:element name="TransactionDate" msprop:Generator_ColumnVarNameInTable="columnTransactionDate" msprop:Generator_ColumnPropNameInRow="TransactionDate" msprop:Generator_ColumnPropNameInTable="TransactionDateColumn" msprop:Generator_UserColumnName="TransactionDate" type="xs:dateTime" />
+              <xs:element name="Odometer" msprop:Generator_ColumnVarNameInTable="columnOdometer" msprop:Generator_ColumnPropNameInRow="Odometer" msprop:Generator_ColumnPropNameInTable="OdometerColumn" msprop:Generator_UserColumnName="Odometer" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vehicleinfo" />
+      <xs:field xpath="mstns:TransactionID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
